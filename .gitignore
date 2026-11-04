@@ -1,3 +1,5 @@
 .DS_Store
 ._*
 .ipynb_checkpoints/
+model/perdepth_lognormal_v3_1103
+model/*.hpp

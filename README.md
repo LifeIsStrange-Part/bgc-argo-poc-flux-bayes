@@ -28,7 +28,6 @@ profile effect. Part of a Bayesian statistics course project. The method follows
 - There is no float effect, so profiles of one float are treated as independent and posterior widths are too narrow.
 - F is not measured directly: F = 5 × sPOC + 12 × lPOC, with assumed sinking speeds in m/d. The results for σ and the upper tail change with these speeds.
 - Same-day Chl-a is missing mostly at |lat| > 50°, so high latitudes are under-sampled.
-- The notebooks use absolute paths on the author's external drive, and step 0 reads intermediate tables that are not in this repository.
 
 ## Files
 
@@ -39,5 +38,17 @@ profile effect. Part of a Bayesian statistics course project. The method follows
 | `step4_pooled_fit.ipynb` | All depths in one model, comparison with Edwards et al. |
 | `source_data_perdepth.xlsx` | Per-depth values and profile information (README sheet explains the columns) |
 | `cleaned_data.csv` | The rows used in the fits |
+| `source/` | Input tables for step 0: per-depth concentrations, deep BBP, profile tags, SST and Chl-a |
 | `model/` | Stan model |
 | `fits/`, `figures/` | Posterior draws and figures |
+
+## Running the notebooks
+
+Run them from the repository folder, in order. Steps 3 and 4 need CmdStan, and they refit the models, so they take several minutes per fit.
+
+```
+pip install numpy pandas scipy matplotlib seaborn cmcrameri openpyxl xlsxwriter cmdstanpy ipykernel
+python -m cmdstanpy.install_cmdstan
+```
+
+The per-level profile files are not included: `source/` starts from ±10 dbar window means.
