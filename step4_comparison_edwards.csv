@@ -1,0 +1,13 @@
+quantity,this fit,Edwards et al. 2026
+observations,296122.0,12936.0
+K-S with sigma,0.04020302442912044,0.044
+"K-S, sigma = 0",0.13844293905890137,0.12
+r with sigma,0.7492960917326184,0.45
+"r, sigma = 0",0.8660173291669457,0.68
+"r2, sigma = 0",0.74998601441745,0.45
+SST effect on mu,0.042163592939500005,0.39
+Chl-a effect on mu,0.0945794154775,0.73
+depth effect on mu,-0.7257222059675,-0.73
+SST effect on sigma,-0.020273645181578114,-0.12
+Chl-a effect on sigma,0.034616267167406574,0.067
+depth effect on sigma,-0.013973470806113289,-0.093
